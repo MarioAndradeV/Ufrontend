@@ -1,0 +1,42 @@
+@font-face {
+    font-family: microbe ;
+    src: url(fonts/RubikMicrobe-Regular.ttf);
+}
+
+body{
+    /* background: red; */
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 45px;
+    text-transform: uppercase;
+
+    /* Colores */
+
+    /* Colores del sistema */
+    color: mediumpurple;
+
+    /* Colores hexadecimales */
+    color: #CCC;
+
+    /* Colores RGB */
+    color: rgb(244, 124, 107);
+
+    /* Colores RGBA */
+    color: rgba(255, 126, 211, .5);
+}
+
+h3{
+    font-family: microbe, "Comic Sans MS";
+    font-size: 28px;
+    font-weight: lighter;
+    
+}
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
