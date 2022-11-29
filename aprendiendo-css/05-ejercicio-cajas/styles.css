@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general{
+    width: 1200px;
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    line-height: 90px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#menu{
+    background-color: #eee;
+}
+
+#menu ul li{
+    /* display: inline-block; */
+    display: block;
+    float: left;
+    
+    border-right: 1px solid #ccc;
+
+}
+
+#menu ul li a{
+    display: block;
+    color: #444;
+    padding: 15px;
+}
+
+#menu ul li:hover{
+    background-color: rgb(86, 33, 136);
+    cursor: pointer;
+}
+
+#menu ul li:hover a{
+    color: white;
+    
+}
+
+#contenido{
+    float: left;
+    width: 69%;
+    border: 1px solid green;
+}
+
+#lateral{
+    float: left;
+    width: 30%;
+    min-height: 500px;
+}
+
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: #ccc;
+    border: 1px solid blue;
+    color: white;
+    float: left;
+    margin: 20px;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 200px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 50px 10px 4px 61px;
+    /* border-radius: 999px; */
+
+}
+
+#contenido > h1{
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #ccc;
+    color: rgb(235, 136, 15);
+    text-shadow: 10px -10px 5px black;
+}
+
+.sombra-interior{
+    box-shadow: 5px 5px 10px gray inset!important;
+}
+
+#footer{
+    width: 100%;
+    height: 55px;
+    background-color: aliceblue;
+    text-align: center;
+    line-height: 55px;
+    color: #444;
+    border-top: 2px solid black;
+}
+

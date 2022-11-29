@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(61, 57, 57);
+    color: aliceblue;
+    /* background-image: url(img/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    /* background-attachment: fixed;
+    background-position: right bottom;
+    color: blueviolet; */ 
+
+    text-align: justify;
+    text-indent: 15px;
+
+    /* word-spacing: 10px;
+    letter-spacing: 5px; */
+
+}
+
+#caja{
+    border: 5px solid salmon;
+    padding: 10px;
+    background-color: aqua;
+    color: white;
+    font-family: "Open Sans";
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    vertical-align: top;
+}
+
+h2{
+    color: red;
+    background-color: aliceblue;
+    border: 5px solid blue;
+    
+}
