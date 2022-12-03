@@ -1,0 +1,104 @@
+
+
+
+body{
+    /* Esto es una variable en css */
+    --rojo: red;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#layout{
+    display: flex;
+    /* display: inline-flex; */
+
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+
+    flex-wrap: wrap;
+    
+    /* Equivale al direction y wrap */
+    flex-flow: row wrap;
+
+    justify-content: center;
+
+    /* No necesita altura */
+    align-items: baseline;
+
+    align-items: flex-start;
+
+
+
+
+    border: 3px solid black;
+    padding: 5px;
+    width: auto;
+    height: 700px;
+
+}
+
+.caja{
+    /* flex-grow: 1; */
+    /* flex-basis: 25%; */
+
+    /* flex-basis: calc((100% /3) -68px); */
+    /* height: 120px; */
+
+
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    border: 4px solid #222;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    background-color: gray;    
+}
+
+.red{
+    background-color: var(--rojo);
+    /* order: 4; */
+    /* flex-grow: 2; */
+
+    /* align-self: center; */
+
+
+
+}
+
+.green{
+    background-color: green;
+    /* order: 3; */
+    /* flex-grow: 5; */
+
+    /* flex-basis: calc(100% / 3); */
+
+    /* flex-basis: 100%; */
+    margin-top: 25%;
+
+
+}
+
+.orange{
+    background-color: orange;
+    /* order: -1; */
+    /* order: 1; */
+
+    /* flex-basis: calc(100% /3); */
+
+    align-self: flex-end;
+
+}
+
+.blue{
+    /* order: 2; */
+    background-color: blue;
+    /* flex-grow: 0; */
+
+    /* shrink para reducir  */
+    /* flex-shrink: 0; */
+
+    margin-top: 10%;
+
+    
+
+}
