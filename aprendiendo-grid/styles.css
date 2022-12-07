@@ -3,6 +3,175 @@ body{
     text-align: center;
     font-family: sans-serif;
 }
+
+/* -------------------------EJERCICIO COMPLETO CON AREAS----------------------- */
+#website-areas *{
+    margin: 0;
+    padding: 0;
+}
+#website-areas{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr) ;
+    grid-template-rows: 150px 70px 1fr 70px;
+    grid-template-areas: 
+        "cabecera cabecera cabecera cabecera cabecera"
+        "menu menu menu menu menu"
+        "lateral contenido contenido contenido contenido"
+        "lateral pie pie pie pie ";
+    grid-gap: 20px;
+    grid-row-gap: 10px;
+    
+    width: 75%;
+    height: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+
+}
+
+#website-areas #cabecera{
+    display: flex;
+    grid-area: cabecera;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+
+
+}
+
+#website-areas #menu{
+    background-color: lightblue;
+    color: black;
+
+    line-height: 70px;
+    grid-area: menu;
+    
+
+
+}
+
+#website-areas #menu ul{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#website-areas #contenido{
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
+    grid-area: contenido;
+}
+
+#website-areas #contenido article{
+    background-color: #ccc;
+    border: 1px solid #555;
+}
+
+#website-areas #lateral{
+    background-color: orange;
+    color: white;
+    grid-area: lateral;
+}
+
+#website-areas #pie-pagina{
+    background-color: black;
+    color: white;
+    grid-area: pie;
+}
+
+
+
+
+
+/* -------------------------EJERCICIO COMPLETO----------------------- */
+#website *{
+    margin: 0;
+    padding: 0;
+}
+#website{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr) ;
+    grid-template-rows: 150px 70px 1fr 70px;
+    
+    width: 75%;
+    height: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+
+}
+
+#website #cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+
+    grid-column: 1 / 6;
+
+}
+
+
+
+#website #menu{
+    background-color: lightblue;
+    color: black;
+    grid-column: 1 / 6;
+
+    line-height: 70px;
+    
+
+
+}
+
+#website #menu ul{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#website #contenido{
+    background-color: #eee;
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
+}
+
+#website #contenido article{
+    background-color: #ccc;
+    border: 1px solid #555;
+}
+
+#website #lateral{
+    background-color: orange;
+    color: white;
+    grid-column: 5 / 6;
+}
+
+#website #pie-pagina{
+    background-color: black;
+    color: white;
+    grid-column: 1 / 6;
+}
+
+
+
+
+
+/* ----------------------------EJEMPLOS------------------------------- */
+
+
 .layout{
     /* width: 1200px; */
     width: 80%;
