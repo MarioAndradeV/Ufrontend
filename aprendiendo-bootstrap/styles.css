@@ -24,3 +24,7 @@ footer{
 .lateral > div {
     height: calc(250px / 3);
 }
+
+#slider{
+    max-height: 450px;
+}
